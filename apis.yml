@@ -1,7 +1,16 @@
 aid: scorpion-therapeutics
 name: Scorpion Therapeutics
-description: 'Scorpion Therapeutics is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'Scorpion Therapeutics is a clinical-stage precision oncology biotechnology company
+  founded in 2020 and headquartered in Boston, Massachusetts. It pursued what it called Precision
+  Oncology 2.0 — integrating target discovery, medicinal chemistry and translational medicine to
+  produce mutant-selective small-molecule cancer drugs — led by STX-478, an oral mutant-selective
+  PI3K-alpha inhibitor in Phase 1/2 trials for breast cancer and other advanced solid tumors, and
+  STX-721, a covalent EGFR/HER2 exon 20 inhibitor. In January 2025 Eli Lilly agreed to acquire
+  Scorpion and its PI3K-alpha program in a transaction valued at up to $2.5 billion, with the
+  non-PI3K-alpha pipeline and staff spun into a separate independent company. Scorpion is a drug
+  developer, not a software vendor: it publishes no API, SDK, developer portal or machine-readable
+  specification, and its own domain now redirects to the acquirer''s announcement.'
+image: https://avatars.githubusercontent.com/u/73207155?v=4
 url: https://raw.githubusercontent.com/api-evangelist/scorpion-therapeutics/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +21,13 @@ created: '2026-08-05'
 modified: '2026-08-05'
 tags:
 - Company
+- Biotechnology
+- Pharmaceuticals
+- Oncology
+- Precision Medicine
+- Drug Discovery
+- Life Sciences
+- Clinical Research
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +35,38 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/scorpion-therapeutics-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/scorpion-therapeutics_stock/
+  url: https://www.scorpiontx.com/
+- type: GitHubOrganization
+  url: https://github.com/scorpiontx
+- type: LinkedIn
+  url: https://www.linkedin.com/company/scorpiontherapeutics
+- type: Press
+  url: https://investor.lilly.com/news-releases/news-release-details/lilly-acquire-scorpion-therapeutics-mutant-selective-pi3ka
+x-enrichment:
+  date: '2026-08-05'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: defunct
+  detail: Scorpion's own site no longer serves the company — https://www.scorpiontx.com/
+    302-redirects every request to Eli Lilly's January 2025 acquisition press release,
+    and the only first-party technical surface left is a four-repo GitHub org of
+    computational-chemistry forks and an STX-721 molecular-dynamics data-availability
+    README, with no API, SDK or spec anywhere.
+  evidence:
+  - url: https://www.scorpiontx.com/
+    status: 302
+  - url: https://www.scorpiontx.com/openapi.json
+    status: 404
+  - url: https://www.scorpiontx.com/llms.txt
+    status: 404
+  - url: https://www.scorpiontx.com/.well-known/agent-card.json
+    status: 403
+  - url: https://api.github.com/orgs/scorpiontx
+    status: 200
+  checked: '2026-08-05'
