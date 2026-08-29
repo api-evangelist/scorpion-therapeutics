@@ -10,6 +10,17 @@ description: 'Scorpion Therapeutics is a clinical-stage precision oncology biote
   non-PI3K-alpha pipeline and staff spun into a separate independent company. Scorpion is a drug
   developer, not a software vendor: it publishes no API, SDK, developer portal or machine-readable
   specification, and its own domain now redirects to the acquirer''s announcement.'
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://avatars.githubusercontent.com/u/73207155?v=4
 url: https://raw.githubusercontent.com/api-evangelist/scorpion-therapeutics/refs/heads/main/apis.yml
 x-type: company
